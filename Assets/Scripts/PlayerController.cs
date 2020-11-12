@@ -19,27 +19,27 @@ public class PlayerController : MonoBehaviour {
         if (position == 0) {
             if (Input.GetKeyDown (KeyCode.LeftArrow)) {
                 position = 1;
-                Debug.Log ("Left Arrow key was pressed.");
+                //Debug.Log ("Left Arrow key was pressed.");
                 transform.position = new Vector3( -3, this.transform.position.y, this.transform.position.z);
                 
             }
             if (Input.GetKeyDown (KeyCode.RightArrow)) {
                 position = 2;
-                Debug.Log ("Right Arrow key was pressed.");
+                //Debug.Log ("Right Arrow key was pressed.");
                 transform.position = new Vector3( 3, this.transform.position.y, this.transform.position.z);
             }
         }
         if (position == 1) {
             if (Input.GetKeyDown (KeyCode.RightArrow)) {
                 position = 0;
-                Debug.Log ("Right Arrow key was pressed.");
+                //Debug.Log ("Right Arrow key was pressed.");
                 transform.position = new Vector3( 0.5f, this.transform.position.y, this.transform.position.z);
             }
         }
         if (position == 2) {
             if (Input.GetKeyDown (KeyCode.LeftArrow)) {
                 position = 0;
-                Debug.Log ("Left Arrow key was pressed.");
+                //Debug.Log ("Left Arrow key was pressed.");
                 transform.position = new Vector3( 0.5f, this.transform.position.y, this.transform.position.z);
                 
             }
